@@ -13,8 +13,12 @@ RSpec.describe Team do
             expect(@team.name).to eq('Ninjas Team')
         end
     end
-    context 'load players' do
-        it "#load" do
-        @team = Team.new 'Ninjas Teams'
-        player = Player.new 'Luis', 'Rivero', '17772329', '0001', '35', 'black', '3', '3', '1', '12'
+    context 'Create players' do
+        it "#create" do
+            @team = Team.new 'Ninjas Teams'
+            player = Player.new 'Luis', 'Rivero', '17772329', '0001', '35', 'black', '3', '3', '1', '12'
+            @team.createplayer'Luis', 'Rivero', '17772329', '0001', '35', 'black', '3', '3', '1', '12'
+            expect(@team.players[0].firtsname).to eql('Luis')
+       end
+    end
 end
