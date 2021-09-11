@@ -1,6 +1,6 @@
 class Player
-    attr_accessor :firtsname, :lastname, :dni, :code, :years, :color, :fightwin, :fightloss, :fighttie, :points
-    def initialize (firtsname, lastname, dni, code, years, color, fightwin, fightloss, fighttie, points)
+    attr_accessor :firtsname, :lastname, :dni, :code, :years, :color, :fightwin, :fightloss, :fighttie, :points, :equipo
+    def initialize (firtsname, lastname, dni, code, years, color, fightwin, fightloss, fighttie, points, equipo)
         @firtsname = firtsname
         @lastname = lastname
         @dni = dni
@@ -11,5 +11,6 @@ class Player
         @fightloss = fightloss
         @fighttie = fighttie
         @points = points
+        @equipo = equipo
     end
 end

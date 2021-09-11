@@ -1,15 +1,12 @@
 
 require_relative 'player'
+
 class Team
-    attr_accessor :name, :players
-    def initialize name
+    attr_accessor :name, :players, :codigo
+    def initialize name, codigo
         @name = name
         @players = Array.new
+        @codigo = codigo
     end
 
-    def createplayer firtsname, lastname, dni, code, years, color, fightwin, fightloss, fighttie, points
-        player = Player.new firtsname, lastname, dni, code, years, color, fightwin, fightloss, fighttie, points
-        @players.push(player)
-        @players
-    end
 end

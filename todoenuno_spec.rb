@@ -1,4 +1,7 @@
 require_relative 'Player'
+require_relative 'Team'
+require_relative 'Torneo'
+
 
 RSpec.describe Player do
     context 'initialize player class' do
@@ -42,5 +45,20 @@ RSpec.describe Player do
             expect(@player.equipo).to eq('EqA')
             end
     end
+
 end
 
+RSpec.describe Team do
+    context 'initialize team class' do
+        before (:each) do
+            @team = Team.new 'EqA'
+        end
+        it '#new' do
+            expect(@team).to be_a_instance_of(Team)
+        end
+        it 'new#name' do
+            expect(@team.name).to eq('EqA')
+        end
+    end
+
+end
