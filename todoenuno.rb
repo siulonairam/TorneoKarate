@@ -20,7 +20,7 @@ class Team
     def initialize name, codigo
         @name = name
         @players = Array.new
-        @codigo = codigo
+      
     end
 
 end
@@ -79,7 +79,7 @@ torneo.createplayer("Richar", "rosas", "21000000", "0007",35,"white", 3, 3, 1, 1
 torneo.createplayer("Mario", "Reyes", "22000000", "0008",33,"black", 3, 3, 1, 13, "EqD" )
 torneo.createplayer("nelson", "Rios", "23000000", "0009",24,"yellow", 7, 0, 0, 28, "EqA" )
 
-encontrar = torneo.searchplayer("24000000")
+encontrar = torneo.searchplayer("00888888")
 torneo.datosplayer(encontrar)
 puts "Campeon del Torneo"
 champions =torneo.campeon()

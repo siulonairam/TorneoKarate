@@ -2,11 +2,11 @@
 require_relative 'player'
 
 class Team
-    attr_accessor :name, :players, :codigo
+    attr_accessor :name,:codigo , :players
     def initialize name, codigo
         @name = name
-        @players = Array.new
         @codigo = codigo
+        @players = Array.new
     end
 
 end

@@ -52,6 +52,7 @@ RSpec.describe Team do
     context 'initialize team class' do
         before (:each) do
             @team = Team.new 'EqA'
+            @player = Player.new 'Luis', 'Rivero', '17772329', '0001', '35', 'black', '3', '3', '1', '12', "EqA"
         end
         it '#new' do
             expect(@team).to be_a_instance_of(Team)
